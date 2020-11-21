@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        CAR PRICE PREDICTIION
+    </title>
+</head>
+<body>
+
+<h1>CAR PRICE PREDICTION</h1>
+<form action="{{url_for('predict')}}" method="POST">
+<h3 name = 'Year' ,type ='number' >Enter Year of Purchase</h3>
+<input name="Year" required = "True">
+<h3 name = 'Showroom_Price' >Enter Showroom Price (in lakhs)</h3>
+<input name="Showroom_Price" required = "True">
+<h3 name = 'Kms_Driven' ,>Enter No. Of Kms. Driven</h3>
+<input name="Kms_Driven" required = "True">
+<h3 name = 'Previous_Car_Owners' >Enter No of Previous Car Owners</h3>
+<input name="Previous_Car_Owners" required = "True">
+<h3>Select the appropriate fuel type</h3>
+<select name ='Fuel_Type' style="padding: 5px" required = "True">
+<option value="Petrol">Petrol</option>
+<option value="Diesel">Diesel</option>
+<option value="CNG">CNG</option>
+</select>
+<h3>Are You an Individual or a Dealer</h3>
+<select name ='Individual_Or_Dealer' style="padding: 5px" required = "True">
+<option value="Individual">Individual</option>
+<option value="Dealer">Dealer</option>
+</select>
+</select>
+<h3>What is the transmission type</h3>
+<select name ='Transmission_Type' style="padding: 5px" required = "True">
+<option value="Manual">Manual</option>
+<option value="Automatic">Automatic</option>
+</select>
+<br><br><button style="padding: 10px" id="sub" type="submit ">Calculate the Selling Price</button>
+            <br>
+    
+    <br><br><h3>{{ prediction_text }}<h3>
+</form>
+</body>
+</html>
+
+ <style>
+        body {
+            background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);           
+             text-align: center;
+            padding: 0px;
+        }
+      
