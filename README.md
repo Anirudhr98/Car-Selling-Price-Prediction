@@ -1,10 +1,10 @@
 # Car-Selling-Price-Prediction
-# Libraries Required :
+Libraries Required :\
 pandas\
 numpy\
 matplolib\
 seaborn\
-sklearn\
+sklearn
 
 # MODEL USED
 Decision Tree Regressor
