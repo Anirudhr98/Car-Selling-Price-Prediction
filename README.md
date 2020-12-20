@@ -4,9 +4,9 @@ pandas\
 numpy\
 matplolib\
 seaborn\
-sklearn
-
-# MODEL USED
-Decision Tree Regressor
-
-# Model Deployed on Heroku
+sklearn\
+\
+MODEL USED\
+Decision Tree Regressor\
+\
+Model Deployed on Heroku
