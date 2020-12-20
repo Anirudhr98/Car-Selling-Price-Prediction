@@ -7,6 +7,7 @@ seaborn\
 sklearn\
 \
 MODEL USED\
-Decision Tree Regressor\
-\
-Model Deployed on Heroku
+The models in contention were Random Forest Regressor, Lasso Regression and Decision Tree Regressor.\
+Using GridSearchCV, Decision Tree Regression turned out to be the best fit.\
+
+The Model was Deployed using Heroku.
